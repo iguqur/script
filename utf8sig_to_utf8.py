@@ -1,8 +1,9 @@
+# -*- coding:utf-8 -*-
 import os
 import codecs
 
 def utf8SigToUtf8(dirPath):
-    '''½«UTF8-ÎÞBOMÌí¼ÓBOM'''
+    '''å°†UTF8-æ— BOMæ·»åŠ BOM'''
     list = os.listdir(dirPath)
     for i in range(0, len(list)):
         path = os.path.join(dirPath, list[i])
@@ -25,4 +26,4 @@ def utf8SigToUtf8(dirPath):
             utf8SigToUtf8(path)
 
 if __name__ == '__main__':
-    utf8SigToUtf8("I:\some")
+    utf8SigToUtf8("C:\workspace\sros-map")
