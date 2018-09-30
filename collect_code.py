@@ -1,7 +1,7 @@
 import os
 
 def collectCode(dirPath, outFilePath):
-    '''将文件夹下的所有代码，拼接到一个文件中'''
+    '''灏嗘墍鏈変唬鐮佺矘鎴愪竴涓枃浠讹紝杞欢钁椾綔鏉冧腑鐢ㄥ埌'''
     doc = open(outFilePath, "a", encoding='UTF-8')
 
     list = os.listdir(dirPath)
